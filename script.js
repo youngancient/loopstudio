@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 function checkSlides(){
     const triggerPoint = window.innerHeight/5 * 4;
-    document.querySelectorAll('.img').forEach(submain =>{
+    document.querySelectorAll('.image-grid .img').forEach(submain =>{
         const boxTop = submain.getBoundingClientRect().top;
         if(boxTop < triggerPoint){
             submain.classList.remove('hide');
