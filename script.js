@@ -1,6 +1,7 @@
 const icon = document.querySelector(".icon");
 const dropDownBg = document.querySelector(".mobile-dropdown");
 const dropDown = document.querySelector(".mobile-links");
+const body = document.querySelector('body');
 document.addEventListener('DOMContentLoaded', function(){
     document.querySelector('.head').classList.remove('hide');
     isClicked = false;
@@ -11,10 +12,12 @@ document.addEventListener('DOMContentLoaded', function(){
             icon.classList.remove('fa-bars');
             icon.classList.add('fa-xmark');
             isClicked = true;
+            body.style.overflowY = "hidden";
         }else{
             icon.classList.remove('fa-xmark');
             icon.classList.add('fa-bars');
             isClicked = false;
+            body.style.overflowY = "auto";
         }
     }
     checkSlides();
@@ -27,5 +30,4 @@ function checkSlides(){
             submain.classList.remove('hide');
         }
     });
-
 }

@@ -12,6 +12,9 @@
 .alata {
   font-family: "Alata", sans-serif;
 }
+body{
+  height: 100vh;
+}
 a,
 i {
   color: hsl(0, 0%, 100%);
@@ -77,7 +80,7 @@ main {
   align-items: center;
 }
 .bdr {
-  border: 1px solid red;
+  border: 3px solid red;
 }
 .mobile-dropdown {
   width: 100vw;
@@ -260,6 +263,9 @@ footer {
   color: hsl(0, 0%, 41%);
 }
 @media screen and (min-width: 728px) {
+  body{
+    height: auto;
+  }
   a {
     font-size: 20px;
   }
